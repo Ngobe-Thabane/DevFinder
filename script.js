@@ -71,7 +71,7 @@ function addGitStat(account){
 
   const statContainer = createElement('div', 'socials-div');
 
-  const stat = [
+  [
     ['Repos', account.getRepos()],
     ['Followers', account.getFollowers()],
     ['Following', account.getFollowing()]
@@ -94,7 +94,7 @@ function usernameDoesNotExist(){
 function getSocials(acount){
 
   const socialDiv = createElement('div', 'social-div');
-  const iconsPaths = [
+  [
     ['assets/icon-company.svg', acount.getCompanyName()], 
     ['assets/icon-location.svg', acount.getLocation()], 
     ['assets/icon-twitter.svg' , acount.getTwiterUsername()], 
